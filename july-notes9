@@ -1,0 +1,53 @@
+Radio Buttons are a type of input, every input should have its own label element. IF a radio button is related to another it should have a name
+Example:
+<label><input type+"radio" name=indoor-outdoor"> Indoor</label>
+Checkboxes are for questions that may have more than one answer, the are also a type of input and need to have its own label element. If a checkbox is related to another it should have the same name.
+Example:
+<label><input type="checkbox" name="personality"> Loving</label>
+Div is an element short for division element, provides a general purpose, Its useful for passing the CSS of its own class declarations down to all the elements it contains
+Example: 
+<div> </div> 
+Background-color property belongs in your style element
+Example:
+.green-background {
+background-color: green;
+}
+Element ID should be unique, DO NOT give more than one element the same id attribute 
+Example:
+<h2 id="cat-photo-app">
+you can style the id attributes like classes using CSS
+Example:
+#cat-photo-element {
+background-color: green;
+}
+* inside of your style element you should always reference ids by putting a # in front of their names 
+Adjusting the Padding of an Element 
+Three important properties padding margin and border 
+Padding controls the amount of space between the elements and its border, when you increase the box's padding it will increase the distance between the text padding and the border around it.
+When you want to customize the amount of padding on each side with padding-top, padding-right, padding-left, padding bottom
+ * same applies when customizing margins(the area surrounding an element) 
+Padding Clockwise Notion-instead of specifying the elements seperatley you can rephrase them to be in order 
+Example:
+padding: 10px(top) 20px (rightt) 10px (bottom) 20px (left) ;
+CSS Inheritance- consists of a body element inside of the style element 
+Example:
+body {
+background-color: black;
+}
+* note - placing the background-color in the body element allows us to prove its exsistence 
+A class used to edit the body ( like the text or size) will override a CSS declaration
+example:
+.pink-text{
+color: pink;
+}
+An id used to edit the body (like text color or size) will override a class
+#pink-text{color:pink;}
+*note this applies regardless of where they are located in the style element
+Inline syle will also override CSS 
+Example:
+<h1 style="color: green">
+Why do i want to override CSS anyway?
+In many situations, you will use CSS libraries. These may accidentally override your own CSS.
+So when you absolutely need to be sure that an element has specific CSS, you can use 
+!important
+
